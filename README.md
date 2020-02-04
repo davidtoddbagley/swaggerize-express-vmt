@@ -2,7 +2,6 @@
 - Design-driven, media-type validated apis with swagger 2.0 and express
 - forked from Trevor Livingston's npm package 'swaggerize-express' v4.0.5 https://github.com/krakenjs/swaggerize-express
 
-[![Build Status](https://github.com/davidtoddbagley/swaggerize-express-vmt.svg?branch=master)](https://github.com/davidtoddbagley/swaggerize-express-vmt)  
 [![NPM version](https://badge.fury.io/js/swaggerize-express-vmt.png)](http://badge.fury.io/js/swaggerize-express-vmt)  
 
 `swaggerize-express-vmt` is a design-driven approach to building RESTful apis with [Swagger](http://swagger.io) and [Express](http://expressjs.com).
