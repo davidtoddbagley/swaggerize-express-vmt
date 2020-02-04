@@ -1,11 +1,12 @@
-# swaggerize-express
+# swaggerize-express-vmt
+Design-driven, media-type validated apis with swagger 2.0 and express (forked from Trevor Livingston's npm package 'swaggerize-express' v4.0.5 https://github.com/krakenjs/swaggerize-express).
 
-[![Build Status](https://travis-ci.org/krakenjs/swaggerize-express.svg?branch=master)](https://travis-ci.org/krakenjs/swaggerize-express)  
-[![NPM version](https://badge.fury.io/js/swaggerize-express.png)](http://badge.fury.io/js/swaggerize-express)  
+[![Build Status](https://github.com/davidtoddbagley/swaggerize-express-vmt.svg?branch=master)](swaggerize-express-vmthttps://github.com/davidtoddbagley/swaggerize-express-vmt)  
+[![NPM version](https://www.npmjs.com/package/swaggerize-express-vmt)](https://www.npmjs.com/package/swaggerize-express-vmt)  
 
-`swaggerize-express` is a design-driven approach to building RESTful apis with [Swagger](http://swagger.io) and [Express](http://expressjs.com).
+`swaggerize-express-vmt` is a design-driven approach to building RESTful apis with [Swagger](http://swagger.io) and [Express](http://expressjs.com).
 
-`swaggerize-express` provides the following features:
+`swaggerize-express-vmt` provides the following features:
 
 - API schema validation.
 - Routes based on the Swagger document.
@@ -23,7 +24,7 @@ There are already a number of modules that help build RESTful APIs for node with
 these modules tend to focus on building the documentation or specification as a side effect of writing
 the application business logic.
 
-`swaggerize-express` begins with the swagger document first. This facilitates writing APIs that are easier to design, review, and test.
+`swaggerize-express-vmt` begins with the swagger document first. This facilitates writing APIs that are easier to design, review, and test.
 
 ### Quick Start with a Generator
 
@@ -56,7 +57,7 @@ You now have a working api and can use something like [Swagger UI](https://githu
 ### Manual Usage
 
 ```javascript
-var swaggerize = require('swaggerize-express');
+var swaggerize = require('swaggerize-express-vmt');
 
 app.use(swaggerize({
     api: require('./api.json'),
@@ -82,7 +83,7 @@ Example:
 ```javascript
 var http = require('http');
 var express = require('express');
-var swaggerize = require('swaggerize-express');
+var swaggerize = require('swaggerize-express-vmt');
 
 app = express();
 
@@ -248,7 +249,7 @@ Sample `x-authorize` code -  lib/auth_oauth.js :
 function authorize(req, res, next) {
     validate(req, function (error, availablescopes) {
         /*
-         * `req.requiredScopes` is set by the `swaggerize-express` module to help
+         * `req.requiredScopes` is set by the `swaggerize-express-vmt` module to help
          * with the scope and security validation.
          *
          */
